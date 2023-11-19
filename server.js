@@ -49,3 +49,48 @@ app.get('/api/notes', (req, res) => {
   console.log('GET /api/notes - noteData:', noteData);
   res.json(noteData);
 });
+
+// Route handler for the '/api/notes' POST request 
+app.post('/api/notes', (req, res) => {
+    const { title, text } = req.body;
+    if (title && text) {
+      const newNote = {
+        title: title,
+        text: text,
+        id: uuid.v4(),
+      };
+  
+      const noteData = readDataFromFile();
+      noteData.push(newNote);
+      writeDataToFile(noteData);
+  
+      const response = {
+        status: 'success',
+        body: newNote,
+      };
+      console.log('POST /api/notes - response:', response);
+      res.status(201).json(response);
+    } else {
+      res.status(500).json('Error in posting data');
+    }
+  });
+  
+  // Route handler for the '/api/notes/:id' DELETE request
+  app.delete('/api/notes/:id', (req, res) => {
+    const noteId = req.params.id;
+    const noteData = readDataFromFile();
+    const updatedData = noteData.filter((note) => note.id !== noteId);
+    writeDataToFile(updatedData);
+  
+    const response = {
+      status: 'success',
+      body: updatedData,
+    };
+    console.log('DELETE /api/notes/:id - response:', response);
+    res.status(200).json(response);
+  });
+  
+  // Open PORT server 
+  app.listen(PORT, () => {
+    console.log(`App listening at http://localhost:${PORT}`);
+  });
