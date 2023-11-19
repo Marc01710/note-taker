@@ -26,7 +26,11 @@ Users start by selecting 'Get Started,' seamlessly entering the notes page. On t
  
 Pictures of deployed note taker application
 
-![alt text]()
+![alt text](./public/assets/images/first%20image.png) ![alt text](./public/assets/images/second%20image.png) ![alt text](./public/assets/images/third%20image.png)
+
+- Link to github repository: https://github.com/Marc01710/note-taker
+- Link to deployed application: 
+
 
 
 ## License
