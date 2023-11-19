@@ -2,7 +2,7 @@
 
 ## Description
 
-The note taker application is a project that provides a user-friendly interface and allows users to write and save notes - improving productivity and task management. Users can access the application through a landing page, navigate to the notes page to view existing notes, and create new notes with a title and text. The project involved using HTML, CSS, JavaScript, and Express.js, providing valuable lessons in full-stack development and user experience design.
+The note taker application is a project that provides a user-friendly interface and allows users to write and save notes for improving productivity and task management. Users can access the application through a landing page, navigate to the notes page to view existing notes, and create new notes with a title and text. The project involved using HTML, CSS, JavaScript, and Express.js, providing valuable lessons in full-stack development and user experience design.
 
 ## Installation
 
