@@ -29,10 +29,7 @@ Pictures of deployed note taker application
 ![alt text](./public/assets/images/first%20image.png) ![alt text](./public/assets/images/second%20image.png) ![alt text](./public/assets/images/third%20image.png)
 
 - Link to github repository: https://github.com/Marc01710/note-taker
-- Link to deployed application: 
+- Link to deployed application on Heroku: https://note-taker-marc01710-1ac285b7b43a.herokuapp.com/
 
 
 
-## License
-
-N/A
